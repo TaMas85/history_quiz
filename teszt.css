@@ -1,0 +1,9 @@
+#ind {display: none;}
+#kerdesek {display: none;}
+#ertek {display: none;}
+#bef {display: none;}
+table {border: solid black 2px; border-collapse: collapse;}
+th, td {border: solid black 2px; text-align: center;background-color:aliceblue;}
+#szin {background-color: blue;}
+#one, #two, #three, #four, #five, #six {background-color: red;}
+caption {font-size: 40px;}

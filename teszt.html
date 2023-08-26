@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teszt.css">
+    <script src="teszt.js"></script>
+    <title>Hunyadiak</title>
+</head>
+<body>
+    <h1>Hunyadiak teszt</h1>
+    <br>
+    <form>
+        <fieldset>
+            <legend>A teszt kitöltő adatai</legend>
+            <label for="nev" >Kérem írja be a nevét: </label>
+            <input type="text" id="nev">
+            <br>
+            <br>
+            <label for="szulhely" >Kérem írja be a születési helyét: </label>
+            <input type="text" id="szulhely">
+            <br>
+            <br>
+            <label for="szuldate" >Kérem írja be a nevét: </label>
+            <input type="date" id="szuldate">
+            <br>
+            <br>
+            <label for="email" >Kérem írja be az e-mail címét: </label>
+            <input type="text" id="email" placeholder="felhasználó@postacím.hu">
+            <br>
+            <br>
+            <div>Legmagasabb iskolai végzettsége: </div> 
+            <select name="isk" id="isko">
+                <option>általános iskola</option>
+                <option>szak iskola</option>
+                <option>érettségi</option>
+                <option>technikum</option>
+                <option>főiskola</option>
+                <option>egyetem</option>
+            </select>
+        </fieldset>
+        
+    </form>
+
+    <button onclick="ellenorzes()">Adatok ellenőrzése</button>
+    <button id="ind" onclick="tesztindul(), szamolas()">Teszt indítása</button>
+    <div id="ido"></div><br>
+    <div id="idoszamolas"></div><br>
+    <div id="ennyi"></div><br>
+    <div id="ertek"></div>
+
+    <form id="kerdesek">
+        <h2>A Hunyadi családhoz kapcsolódó kérdések</h2>
+        <fieldset>
+            <legend>1. kérdés (2 pont)</legend>
+            <label for="egy">Milyen madár látható a Hunyadiak címerén?</label>
+            <input type="text" id="egy">
+        </fieldset>
+        <fieldset>
+            <legend>2. kérdés (2 pont)</legend>
+            <label for="ketto">Hány felesége volt Mátyás királynak?</label>
+            <input type="number" id="ketto">
+            
+        </fieldset>
+        <fieldset>
+            <legend>3. kérdés (3 pont)</legend>
+            <label for="harom">Melyek voltak Hunyadi János főbb csatáinak helyszínei?</label>
+            <textarea name="harom" id="harom" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>4. kérdés (2 pont)</legend>
+            <label for="negy">Honnan származott Mátyás király felesége Beatrix királyné?</label><br>
+            <input type="radio" name="rad" value="Firenze" checked> Firenze <br>
+            <input type="radio" name="rad" value="Velence"> Velence <br>
+            <input type="radio" name="rad" value="Nápoly"> Nápoly <br>
+            <input type="radio" name="rad" value="Burgundia"> Burgundia <br>
+
+        </fieldset>
+        <fieldset>
+            <legend>5. kérdés (4 pont)</legend>
+            <label for="ot">Kik voltak Hunyadi János legfőbb magyarországi ellenségei?</label><br>
+            <input type="checkbox" id="a" name="ba" value="Vitéz János" checked> Vitéz János <br>
+            <input type="checkbox" id="a" name="bb" value="Cillei Ulrik"> Cillei Ulrik <br>
+            <input type="checkbox" id="a" name="bc" value="Kapisztrán János"> Kapisztrán János <br>
+            <input type="checkbox" id="a" name="bd" value="Újlaki Miklós"> Újlaki Miklós <br>
+
+        </fieldset>
+        <fieldset>
+            <legend>6. kérdés (2 pont)</legend>
+            <label for="hat">Hogy hívták Mátyás király édesanyát?</label>
+            <select name="hatos" id="hat">
+                <option>Cillei Anna</option>
+                <option>Podjebrád Katalin</option>
+                <option>Szilágyi Erzsébet</option>
+            </select>
+        </fieldset>
+        
+        
+    </form>
+    <button id="bef" onclick="befejezes()" >Teszt befejezése</button>
+</body>
+</html>
